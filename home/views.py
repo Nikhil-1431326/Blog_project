@@ -57,8 +57,7 @@ def add_blog(request):
             
             blog_obj = BlogModel.objects.create(
                 user = user , title = title, 
-                content = content, image = image
-            )
+                content = content, image = image)
             print(blog_obj)
             return redirect('/add-blog/')
             
